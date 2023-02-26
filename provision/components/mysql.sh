@@ -1,8 +1,11 @@
 #!/bin/bash
 
 DBHOST=localhost
-DBNAME=mydb
-DBUSER=myuser
+#DBNAME=mydb
+#DBUSER=myuser
+#DBPASSWD=password
+DBNAME=bookedscheduler
+DBUSER=booked_user
 DBPASSWD=password
 
 apt-get update
