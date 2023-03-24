@@ -4,8 +4,8 @@ DBHOST=localhost
 #DBNAME=mydb
 #DBUSER=myuser
 #DBPASSWD=password
-DBNAME=bookedscheduler
-DBUSER=booked_user
+DBNAME=librebooking
+DBUSER=lb_user
 DBPASSWD=password
 
 apt-get update
