@@ -13,7 +13,7 @@ apt-get update
 debconf-set-selections <<< "mysql-server mysql-server/root_password password $DBPASSWD"
 debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $DBPASSWD"
 
-apt-get -y install mysql-server-5.7
+apt-get -y install mysql-server
 
 CMD="mysql -uroot -p$DBPASSWD -e"
 
