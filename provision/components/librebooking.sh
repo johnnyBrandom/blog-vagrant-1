@@ -10,7 +10,7 @@ sudo usermod -a -G www-data vagrant
 
 cd $INSTALLPATH
 
-if [ -f tpl_c ]; then
+if [ -d tpl_c ]; then
   rm -rf tpl_c
 fi
 
