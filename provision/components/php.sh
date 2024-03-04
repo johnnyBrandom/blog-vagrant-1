@@ -1,10 +1,11 @@
 #!/bin/bash
 
-sudo apt-get install -y software-properties-common
-#sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
-sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/apache2
 sudo apt-get update
-sudo apt-get install -y php php-bcmath php-bz2 php-cli php-curl php-intl php-json php-mbstring php-opcache php-soap php-xml php-xsl php-zip libapache2-mod-php php-mysql php-gd
+
+#sudo apt-get install -y software-properties-common ca-certificates lsb-release apt-transport-https
+sudo apt-get install -y software-properties-common ca-certificates 
+
+sudo apt-get install -y php php-bcmath php-bz2 php-cli php-curl php-intl php-json php-mbstring php-opcache php-soap php-xml php-xsl php-zip libapache2-mod-php php-mysql php-gd gettext
 
 # Get the php version that was installed by querying the /etc/php subdir
 # Note this command expects a single subdirectory
