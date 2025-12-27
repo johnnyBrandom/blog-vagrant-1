@@ -16,6 +16,7 @@ Vagrant.configure("2") do |config|
     config.vm.hostname = "librebooking.dev"
     config.vm.network "private_network", ip: "10.10.1.10"
 
+    config.vm.provision :shell, path: "provision/components/git.sh"
     config.vm.provision :shell, path: "provision/components/apache.sh"
     config.vm.provision :shell, path: "provision/components/php.sh"
     config.vm.provision :shell, path: "provision/components/mysql.sh"
